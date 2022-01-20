@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include saudi_arabia_compliance *.css
+recursive-include saudi_arabia_compliance *.csv
+recursive-include saudi_arabia_compliance *.html
+recursive-include saudi_arabia_compliance *.ico
+recursive-include saudi_arabia_compliance *.js
+recursive-include saudi_arabia_compliance *.json
+recursive-include saudi_arabia_compliance *.md
+recursive-include saudi_arabia_compliance *.png
+recursive-include saudi_arabia_compliance *.py
+recursive-include saudi_arabia_compliance *.svg
+recursive-include saudi_arabia_compliance *.txt
+recursive-exclude saudi_arabia_compliance *.pyc
