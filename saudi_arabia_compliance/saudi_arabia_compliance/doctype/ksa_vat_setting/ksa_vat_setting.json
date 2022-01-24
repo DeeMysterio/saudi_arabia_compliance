@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "autoname": "field:company",
+ "creation": "2022-01-20 19:44:15.462806",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "ksa_vat_sales_accounts",
+  "ksa_vat_purchase_accounts"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "ksa_vat_sales_accounts",
+   "fieldtype": "Table",
+   "label": "KSA VAT Sales Accounts",
+   "options": "KSA VAT Sales Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ksa_vat_purchase_accounts",
+   "fieldtype": "Table",
+   "label": "KSA VAT Purchase Accounts",
+   "options": "KSA VAT Purchase Account",
+   "reqd": 1
+  }
+ ],
+ "links": [],
+ "modified": "2022-01-21 17:39:20.725320",
+ "modified_by": "Administrator",
+ "module": "Saudi Arabia Compliance",
+ "name": "KSA VAT Setting",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "company",
+ "track_changes": 1
+}

@@ -66,7 +66,7 @@ app_license = "MIT"
 # ------------
 
 # before_install = "saudi_arabia_compliance.install.before_install"
-# after_install = "saudi_arabia_compliance.install.after_install"
+after_install = "saudi_arabia_compliance.install.after_install"
 
 # Uninstallation
 # ------------
@@ -111,6 +111,24 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
+
+doc_events = {
+	"Sales Invoice": {
+		"on_submit": [
+			"saudi_arabia_compliance.utils.create_qr_code",
+		],
+		"on_cancel": [
+			"saudi_arabia_compliance.utils.delete_qr_code_file"
+		]
+	},
+	"POS Invoice": {
+		"on_submit": ["saudi_arabia_compliance.utils.create_qr_code"]
+	},
+	"Company": {
+		"on_trash": [
+			"saudi_arabia_compliance.utils.delete_vat_settings_for_company"]
+	}
+}
 
 # Scheduled Tasks
 # ---------------
