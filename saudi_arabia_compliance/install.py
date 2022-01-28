@@ -9,7 +9,6 @@ from frappe.custom.doctype.custom_field.custom_field import create_custom_fields
 
 
 def after_install():
-	print('***********after_install***********')
 	make_custom_fields()
 	add_print_formats()
 	add_permissions()
