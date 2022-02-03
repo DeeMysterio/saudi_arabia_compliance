@@ -206,3 +206,8 @@ doc_events = {
 # 	"saudi_arabia_compliance.auth.validate"
 # ]
 
+regional_overrides = {
+	'Saudi Arabia': {
+		'erpnext.controllers.taxes_and_totals.update_itemised_tax_data': 'saudi_arabia_compliance.utils.update_itemised_tax_data'
+	}
+}
